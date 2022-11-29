@@ -1,4 +1,5 @@
-<%= turbo_frame_tag note do %>
+<div id = "<%= dom_id note %>">
+<%= turbo_frame_tag "note"%>
   <p class="my-5">
     <strong class="block font-medium mb-1">Title:</strong>
     <%= note.title %>
@@ -15,4 +16,4 @@
     <%= link_to 'Edit this note', edit_note_path(note), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
     <hr class="mt-6">
   <% end %>
-<% end %>
+
