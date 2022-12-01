@@ -10,6 +10,8 @@
     <%= note.content %>
   </p>
 
+  <%= image_tag(note.image, width: 300) if note.image.attached? %>
+
   <% if action_name != "show" %>
     <%= button_to "Destroy this Note", note_path(note), method: :delete, class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
     <%= link_to "Show this note", note, data: {turbo_stream: "_top"}, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>

@@ -96,6 +96,12 @@ GEM
       warden (~> 1.2.3)
     erubi (1.11.0)
     ffi (1.15.5)
+    fly-ruby (0.5.1)
+      rack (~> 2.0)
+    fly.io-rails (0.3.4)
+      fly-ruby
+      nats-pure
+      toml
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
@@ -129,6 +135,7 @@ GEM
     mini_portile2 (2.8.0)
     minitest (5.16.3)
     msgpack (1.6.0)
+    nats-pure (2.2.1)
     net-imap (0.3.1)
       net-protocol
     net-pop (0.1.2)
@@ -142,6 +149,7 @@ GEM
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     orm_adapter (0.5.0)
+    parslet (2.0.0)
     public_suffix (5.0.0)
     puma (5.6.5)
       nio4r (~> 2.0)
@@ -207,6 +215,8 @@ GEM
       railties (>= 6.0.0)
     thor (1.2.1)
     timeout (0.3.0)
+    toml (0.3.0)
+      parslet (>= 1.8.0, < 3.0.0)
     turbo-rails (1.3.2)
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
@@ -240,6 +250,7 @@ DEPENDENCIES
   capybara
   debug
   devise
+  fly.io-rails (~> 0.3.4)
   image_processing
   importmap-rails
   jbuilder
